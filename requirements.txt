@@ -1,0 +1,17 @@
+
+--index-url https://download.pytorch.org/whl/cu118
+
+# Core ML framework
+torch==2.7.1
+torchvision==0.22.1
+torchaudio==2.7.1
+
+# High-level PyTorch Lightning interface
+lightning>=2.5.5
+
+# Data manipulation
+pandas>=2.3.3
+numpy>=2.3.4
+
+# matplotlib>=3.9.0
+
