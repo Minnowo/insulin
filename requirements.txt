@@ -1,10 +1,13 @@
 
 --index-url https://download.pytorch.org/whl/cu118
+--extra-index-url https://pypi.org/simple
 
 # Core ML framework
 torch==2.7.1
 torchvision==0.22.1
 torchaudio==2.7.1
+torchmetrics
+
 
 # High-level PyTorch Lightning interface
 lightning>=2.5.5
@@ -15,3 +18,4 @@ numpy>=2.3.4
 
 # matplotlib>=3.9.0
 
+fastapi[standard]>=0.121
