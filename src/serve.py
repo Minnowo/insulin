@@ -107,11 +107,11 @@ async def home_papge(request : Request):
                 <br><br>
                 
                 <label for="blood_sugar">Blood Sugar (mg/dL):</label>
-                <input type="number" id="blood_sugar" name="blood_sugar" step="0.1" required>
+                <input type="number" id="blood_sugar" name="blood_sugar" step="any" required>
                 <br><br>
                 
                 <label for="net_carbs">Net Carbs (g):</label>
-                <input type="number" id="net_carbs" name="net_carbs" step="0.1" required>
+                <input type="number" id="net_carbs" name="net_carbs" step="any" required>
                 <br><br>
 
                 <label for="target_blood_sugar">Target Blood Sugar:</label>
