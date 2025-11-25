@@ -115,7 +115,7 @@ async def home_papge(request : Request):
                 <br><br>
 
                 <label for="target_blood_sugar">Target Blood Sugar:</label>
-                <input type="number" id="target_blood_sugar" name="target_blood_sugar" value="6.7" required>
+                <input type="number" id="target_blood_sugar" name="target_blood_sugar" value="6.7" step="any" required>
                 <br><br>
                 
                 <button type="submit">Submit</button>
@@ -162,6 +162,8 @@ if __name__ == "__main__":
         ("./models/model_insulin_v0.ckpt", "v0", libInsulin.InsulinModule),
         ("./models/model_insulin_v1.ckpt", "v1", libInsulin.InsulinModule),
         ("./models/model_insulin_v2.ckpt", "v2", libInsulin.InsulinModule2),
+        ("./models/model_insulin_v3.ckpt", "v3_(full dataset no test)", libInsulin.InsulinModule),
+        ("./models/model_insulin_v4.ckpt", "v4_(full dataset no test patience=3)", libInsulin.InsulinModule),
     ]
 
     for (path, name, modelInst) in toLoad:
